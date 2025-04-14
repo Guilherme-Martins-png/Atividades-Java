@@ -9,7 +9,7 @@ public class DesafioJavaBanco {
         String opera = """
                 Operações:
                 1 - Consultar saldo
-                2 - Receber Valor
+                2 - Depositar Valor
                 3 - Sacar Valor
                 4 - Sair
                 
@@ -39,10 +39,10 @@ public class DesafioJavaBanco {
                     break;
 
                 case 2:
-                    System.out.println("Quanto gostaria de receber?");
+                    System.out.println("Quanto gostaria de depositar em sua conta?");
                     int valorRecebimento = leitura.nextInt();
                     valorDaConta += valorRecebimento;
-                    System.out.println("Sucesso! Seu saldo atual é de: " + valorDaConta);
+                    System.out.println("Deposito concluido! Seu saldo atual é de: " + valorDaConta);
                     System.out.println("Gostaria de voltar ao menu? (S/N)");
                     String opcaoMenu2 = leitura.next();
                     if (opcaoMenu2.equalsIgnoreCase("N")) {
